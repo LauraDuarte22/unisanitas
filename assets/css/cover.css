@@ -31,9 +31,9 @@ body {
 }
 /*Cambio de color cuando el usuario interactua con el botón*/
 .btn-primary:hover {
-  background-color: #FFFFFF !important;
-  border-color: #FFFFFF !important;
-  color: #000000;
+  background-color: #979797 !important;
+  border-color: #979797 !important;
+
 }
 /*Los elementos del formularios se despliegan uno debajo de otro*/
 form {
