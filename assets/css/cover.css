@@ -56,6 +56,10 @@ form {
   .centered i {
     width: 75px;
   }
+  .principal {
+    margin: 0;
+    float: none;
+  }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
 .validateCheck {
@@ -76,22 +80,22 @@ form {
 /*ELEMENTO DE CARGA*/
 
 .lds-ring {
-  display: inline-block;
+  display: none;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 25px;
+  height: 25px;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 35px;
+  height: 35px;
   margin: 8px;
-  border: 8px solid #000000;
+  border: 8px solid #169cbc;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #169cbc transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
