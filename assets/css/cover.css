@@ -1,0 +1,164 @@
+/*
+ *Estilos de las páginas
+ */
+
+/*Background de la landing principal*/
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-size: cover;
+
+}
+/*Background de gracias*/
+.body-gracias{
+   background-image: url("/asset/img/Background-Gracias.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-size: cover;
+}
+/*El background ocupa toda la página*/
+.cover-container {
+  height: 100vh;
+  max-width: 42em;
+}
+/*Colores de los botones*/
+.btn-primary {
+  background-color: #169cbc !important;
+  border-color: #169cbc !important;
+}
+/*Cambio de color cuando el usuario interactua con el botón*/
+.btn-primary:hover {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: #000000;
+}
+/*Los elementos del formularios se despliegan uno debajo de otro*/
+form {
+  display: inline-block;
+}
+/*Posición de la imagen del programa*/
+.program {
+  position: absolute;
+  margin: 3rem;
+  bottom: 0;
+  right: 0;
+}
+/*Responsive*/
+@media only screen and (max-width: 1180px) {
+  .program {
+    position: static;
+    margin: 0;
+  }
+  .program img {
+    width: 250px;
+  }
+  .centered i {
+    width: 75px;
+  }
+}
+/*VALIDACIÓN DEL FORMULARIOS*/
+.validateCheck {
+  border: solid 2px red !important;
+  outline: none !important;
+
+}
+.completed{
+   border-color: #ced4da !important;
+}
+/*Color del texto de gracias*/
+.display-1{
+  color:#46799F;
+}
+/*Color del texto de confirmación de envio*/
+.fs-1{
+  color:#169CBC;
+}
+/*ELEMENTO DE CARGA*/
+.lds-roller {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
