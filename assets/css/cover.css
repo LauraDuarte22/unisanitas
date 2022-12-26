@@ -6,17 +6,16 @@
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-size: cover;
-
 }
 /*Background de gracias*/
-.body-gracias{
-   background-image: url("/asset/img/Background-Gracias.png");
+.body-gracias {
+  background-image: url("/asset/img/Background-Gracias.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-size: cover;
 }
 /*El background ocupa toda la página*/
@@ -33,7 +32,6 @@ body {
 .btn-primary:hover {
   background-color: #979797 !important;
   border-color: #979797 !important;
-
 }
 /*Los elementos del formularios se despliegan uno debajo de otro*/
 form {
@@ -63,25 +61,26 @@ form {
 .validateCheck {
   border: solid 2px red !important;
   outline: none !important;
-
 }
-.completed{
-   border-color: #ced4da !important;
+.completed {
+  border-color: #ced4da !important;
 }
 /*Color del texto de gracias*/
-.display-1{
-  color:#46799F;
+.display-1 {
+  color: #46799f;
 }
 /*Color del texto de confirmación de envio*/
-.fs-1{
-  color:#169CBC;
+.fs-1 {
+  color: #169cbc;
 }
 /*ELEMENTO DE CARGA*/
 .lds-roller {
-  display: none;
+  display: inline-block;
+  vertical-align: middle;
+
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 5px;
+  height: 5px;
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -94,7 +93,7 @@ form {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #000000;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
@@ -161,4 +160,3 @@ form {
     transform: rotate(360deg);
   }
 }
-
