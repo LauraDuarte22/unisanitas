@@ -6,16 +6,17 @@
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-size: cover;
+
 }
 /*Background de gracias*/
-.body-gracias {
-  background-image: url("/assets/img/Background-Gracias.png");
+.body-gracias{
+   background-image: url("/asset/img/Background-Gracias.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-size: cover;
 }
 /*El background ocupa toda la página*/
@@ -30,8 +31,9 @@ body {
 }
 /*Cambio de color cuando el usuario interactua con el botón*/
 .btn-primary:hover {
-  background-color: #979797 !important;
-  border-color: #979797 !important;
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  color: #000000;
 }
 /*Los elementos del formularios se despliegan uno debajo de otro*/
 form {
@@ -45,70 +47,113 @@ form {
   right: 0;
 }
 /*Responsive*/
-@media only screen and (max-width: 1275px) {
+@media only screen and (max-width: 1180px) {
   .program {
     position: static;
     margin: 0;
   }
-  .img-fluid {
-    width: 35%;
+  .program img {
+    width: 250px;
   }
   .centered i {
     width: 75px;
-  }
-  .principal {
- 
-    margin: 0 auto !important;
-    text-align: center;
-    float: none !important;
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
 .validateCheck {
   border: solid 2px red !important;
   outline: none !important;
+
 }
-.completed {
-  border-color: #ced4da !important;
+.completed{
+   border-color: #ced4da !important;
 }
 /*Color del texto de gracias*/
-.display-1 {
-  color: #46799f;
+.display-1{
+  color:#46799F;
 }
 /*Color del texto de confirmación de envio*/
-.fs-1 {
-  color: #169cbc;
+.fs-1{
+  color:#169CBC;
 }
 /*ELEMENTO DE CARGA*/
-
-.lds-ring {
+.lds-roller {
   display: none;
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 }
-.lds-ring div {
-  box-sizing: border-box;
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
   display: block;
   position: absolute;
-  width: 35px;
-  height: 35px;
-  margin: 8px;
-  border: 8px solid #169cbc;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #169cbc transparent transparent transparent;
+  background: #FFFFFF;
+  margin: -4px 0 0 -4px;
 }
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
 }
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
 }
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
 }
-@keyframes lds-ring {
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
   0% {
     transform: rotate(0deg);
   }
@@ -116,3 +161,4 @@ form {
     transform: rotate(360deg);
   }
 }
+
