@@ -11,7 +11,7 @@ body {
 }
 /*Background de gracias*/
 .body-gracias {
-  background-image: url("/asset/img/Background-Gracias.png");
+  background-image: url("/assets/img/Background-Gracias.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,8 +57,7 @@ form {
     width: 75px;
   }
   .principal {
-    margin: 0;
-    float: none;
+    margin-right: auto!important;
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
