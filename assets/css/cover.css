@@ -44,7 +44,7 @@ form {
   bottom: 0;
   right: 0;
 }
-/*Responsive*/
+/*Responsive
 @media only screen and (max-width: 1275px) {
   .program {
     position: static;
@@ -62,7 +62,7 @@ form {
     text-align: center;
     float: none !important;
   }
-}
+}*/
 /*VALIDACIÓN DEL FORMULARIOS*/
 .validateCheck {
   border: solid 2px red !important;
