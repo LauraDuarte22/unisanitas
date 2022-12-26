@@ -18,16 +18,11 @@
 </head>
 <!-- Inicio del contenido de la página-->
 
-<body class="d-flex h-100 text-bg-dark text-end"
+<body class="d-flex flex-row-reverse  h-100 text-bg-dark"
   style="  background-image: url('/assets/img/Backgroud Enfermería-min.jpg')">
   <!--Bloque que contiene todos los elementos de la pagina-->
-  <main class="container">
-    <!-- Elemento de bloque que contiene el logo de Unisanitas-->
-    <div class=" mt-4">
-      <!--Imagen que contiene el logo de Unisanitas-->
-      <img src="/assets/img/Logo.png" class="rounded" alt="Logo Unisanitas" width="100px" />
-    </div>
-    <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
+  <main class="text-center m-4">
+     <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
     <div id="loader" class="lds-ring ">
       <div></div>
       <div></div>
@@ -37,9 +32,15 @@
       <div></div>
       <div></div>
     </div>
+    <!-- Elemento de bloque que contiene el logo de Unisanitas-->
+    <div class="mt-4">
+      <!--Imagen que contiene el logo de Unisanitas-->
+      <img src="/assets/img/Logo.png" class="rounded" alt="Logo Unisanitas" width="100px" />
+    </div>
+   
     <!--Fin del elemento de carga-->
     <!--Elemento de bloque que contiene el texto principal de la pagina-->
-    <div class="text-end">
+    <div class="">
       <div class="text-black">
         <h1 class="fs-3">Ingresa tus datos</h1>
       </div>
@@ -47,7 +48,7 @@
       <!-- Elemento de bloque que contiene el formulario-->
       <div class="contact-form">
         <!-- Inicio del formulario-->
-        <form action="post" class="w-30 form-horizontal text-end" method="post" role="form"  id="form">
+        <form action="post" class="w-30" method="post" role="form"  id="form">
           <!-- Bloque  que contiene un input que indica el programa -->
           <div class="form-group mb-2">
             <input class="form-control text-center rounded-pill" type="text" placeholder="Enfemería" value="Enfemería"
@@ -106,7 +107,7 @@
       </div>
       <!--Fin Elemento de bloque que contiene el formulario-->
       <!-- Bloque que contiene la imagen del programa-->
-      <div class="d-block">
+      <div class="">
       <figure>
           <img class="img-fluid" src="/assets/img/Texto-enfermeria.png" alt="Pregrado en Medicina" width="180px" />
       </figure>
