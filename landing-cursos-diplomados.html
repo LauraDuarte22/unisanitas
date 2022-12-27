@@ -33,7 +33,7 @@
     <!--Bloque que contiene todos los elementos de la pagina-->
     <main class="text-center mt-4 me-5 mb-0">
       <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
-    
+
       <!-- Elemento de bloque que contiene el logo de Unisanitas-->
       <div class="mt-2">
         <!--Imagen que contiene el logo de Unisanitas-->
@@ -44,7 +44,7 @@
           width="100px"
         />
       </div>
-        <div id="loader" class="lds-ring">
+      <div id="loader" class="lds-ring">
         <div></div>
         <div></div>
         <div></div>
@@ -72,12 +72,16 @@
             id="form"
           >
             <!-- Bloque  que contiene un input que indica el programa -->
-            <div class="form-group   mb-2 text-center">
+            <div class="form-group mb-2 text-center"  >
               <select
                 name="programa_academico"
-                class="form-select text-left rounded-pill   h-100 w-100"
-                                   >
-                  <option selected disabled class="justify-content-between" >Seleccione el curso o diplomado</option>
+                class="form-select text-left rounded-pill w-50"
+                      style=" overflow: hidden;"
+                data-mdb-size="sm"
+              >
+                <option selected disabled class="justify-content-between">
+                  Seleccione el curso o diplomado
+                </option>
                 <option
                   value="Curso de Reanimación Cardiopulmonar Básica - BLS"
                 >
