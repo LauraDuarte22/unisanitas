@@ -9,8 +9,9 @@
     <meta
       name="description"
       content="Landing de Unisanitas para Cursos y Diplomados"
-    /> <!-- Logo de Unisaitas en la pestaña-->
-     <link rel="shortcut icon" href="/assets/img/Logo.png" />
+    />
+    <!-- Logo de Unisaitas en la pestaña-->
+    <link rel="shortcut icon" href="/assets/img/Logo.png" />
     <!--Título de la pestaña -->
     <title>Bienvenido a Unisanitas</title>
     <!-- CSS con bootstrap versión 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
@@ -26,21 +27,13 @@
   <!-- Inicio del contenido de la página-->
 
   <body
-    class="d-flex flex-row-reverse h-100 text-bg-dark "
+    class="d-flex flex-row-reverse h-100 text-bg-dark"
     style="background-image: url('/assets/img/Cursos y Diplomados-min.jpg')"
   >
     <!--Bloque que contiene todos los elementos de la pagina-->
     <main class="text-center mt-4 me-5 mb-0">
       <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
-      <div id="loader" class="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    
       <!-- Elemento de bloque que contiene el logo de Unisanitas-->
       <div class="mt-2">
         <!--Imagen que contiene el logo de Unisanitas-->
@@ -50,6 +43,15 @@
           alt="Logo Unisanitas"
           width="100px"
         />
+      </div>
+        <div id="loader" class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
       <!--Fin del elemento de carga-->
@@ -71,14 +73,226 @@
           >
             <!-- Bloque  que contiene un input que indica el programa -->
             <div class="form-group mb-2 text-center">
-              <input
-                class="form-control text-center rounded-pill"
-                type="text"
-                placeholder="lista de cursos y diplomados"
-                value="lista de cursos y diplomados"
+              <select
                 name="programa_academico"
-                disabled
-              />
+                class="form-control text-left rounded-pill"
+              >
+                <option
+                  value="Curso de Reanimación Cardiopulmonar Básica - BLS"
+                >
+                  Curso de Reanimación Cardiopulmonar Básica - BLS
+                </option>
+                <option
+                  value="Curso de Reanimación Cardiopulmonar Avanzada - ACLS"
+                >
+                  Curso de Reanimación Cardiopulmonar Avanzada - ACLS
+                </option>
+                <option
+                  value="Curso de Reanimación Básica y Avanzada en Pediatría - PALS"
+                >
+                  Curso de Reanimación Básica y Avanzada en Pediatría - PALS
+                </option>
+                <option
+                  value="Certificación en Atención de las Víctimas de Violencia Sexual"
+                >
+                  Certificación en Atención de las Víctimas de Violencia Sexual
+                </option>
+                <option
+                  value="Curso para Asesoría y Prueba Voluntaria de VIH - APV"
+                >
+                  Curso para Asesoría y Prueba Voluntaria de VIH - APV
+                </option>
+                <option
+                  value="Curso de Toma e Interpretación de Citología Cérvico Uterina"
+                >
+                  Curso de Toma e Interpretación de Citología Cérvico Uterina
+                </option>
+                <option value="Curso del Programa Ampliado de Inmunizaciones">
+                  Curso del Programa Ampliado de Inmunizaciones
+                </option>
+                <option value="Curso de Toma de Muestras de Laboratorio">
+                  Curso de Toma de Muestras de Laboratorio
+                </option>
+                <option
+                  value="Certificación en Métodos de Anticoncepción con énfasis en consejería"
+                >
+                  Certificación en Métodos de Anticoncepción con énfasis en
+                  consejería
+                </option>
+                <option
+                  value="Curso de Atención Integral de las Enfermedades Prevalentes de la Infancia - AIEPI Clínico"
+                >
+                  Curso de Atención Integral de las Enfermedades Prevalentes de
+                  la Infancia - AIEPI Clínico
+                </option>
+                <option value="Curso Manejo del Duelo">
+                  Curso Manejo del Duelo
+                </option>
+                <option
+                  value="Curso Atención de Urgencias en Pacientes Víctimas de Ataque con Agentes Químicos"
+                >
+                  Curso Atención de Urgencias en Pacientes Víctimas de Ataque
+                  con Agentes Químicos
+                </option>
+                <option
+                  value="Curso de Donación de Órganos - En alianza con Fundación Donarte"
+                >
+                  Curso de Donación de Órganos - En alianza con Fundación
+                  Donarte
+                </option>
+                <option value="Curso de Lactancia Materna">
+                  Curso de Lactancia Materna
+                </option>
+                <option value="Curso de Excel">Curso de Excel</option>
+                <option value="Curso de Electrocardiografía Básica y Arritmias">
+                  Curso de Electrocardiografía Básica y Arritmias
+                </option>
+                <option value="Curso de Protección y Seguridad Radiológica">
+                  Curso de Protección y Seguridad Radiológica
+                </option>
+                <option value="Curso Primeros Auxilios Psicológicos">
+                  Curso Primeros Auxilios Psicológicos
+                </option>
+                <option
+                  value="Curso de Cuidado Crítico para el Personal Auxiliar de Enfermería"
+                >
+                  Curso de Cuidado Crítico para el Personal Auxiliar de
+                  Enfermería
+                </option>
+                <option
+                  value="Un día Mindfulness: “Comenzando el camino hacia tu conciencia”"
+                >
+                  Un día Mindfulness: “Comenzando el camino hacia tu conciencia”
+                </option>
+                <option value="Curso de Farmacología para Regentes de Farmacia">
+                  Curso de Farmacología para Regentes de Farmacia
+                </option>
+                <option
+                  value="Curso Aproximación a las Terapias de Tercera Generación"
+                >
+                  Curso Aproximación a las Terapias de Tercera Generación
+                </option>
+                <option
+                  value="Diplomado en Endocrinología Ginecológica y Reproductiva"
+                >
+                  Diplomado en Endocrinología Ginecológica y Reproductiva
+                </option>
+                <option
+                  value="Diplomado en Preparación de Médicos Generales para Residencias Médicas"
+                >
+                  Diplomado en Preparación de Médicos Generales para Residencias
+                  Médicas
+                </option>
+                <option
+                  value="Diplomado de Cuidados Paliativos en Enfermedad Crónica Evolutiva"
+                >
+                  Diplomado de Cuidados Paliativos en Enfermedad Crónica
+                  Evolutiva
+                </option>
+                <option
+                  value="Diplomado de Procesos Diagnósticos en Radiología para Médicos Generales"
+                >
+                  Diplomado de Procesos Diagnósticos en Radiología para Médicos
+                  Generales
+                </option>
+                <option
+                  value="Diplomado en Lactancia Materna con Énfasis en Consejería"
+                >
+                  Diplomado en Lactancia Materna con Énfasis en Consejería
+                </option>
+                <option
+                  value="Diplomado en Gestión del Riesgo Centrado en Tecnología en Salud y la Seguridad del Paciente"
+                >
+                  Diplomado en Gestión del Riesgo Centrado en Tecnología en
+                  Salud y la Seguridad del Paciente
+                </option>
+                <option
+                  value="Diplomado en Gestión de la APS en el Marco del SGSSS"
+                >
+                  Diplomado en Gestión de la APS en el Marco del SGSSS
+                </option>
+                <option
+                  value="Diplomado de Monitoreo Hemodinámico en Paciente Adulto"
+                >
+                  Diplomado de Monitoreo Hemodinámico en Paciente Adulto
+                </option>
+                <option
+                  value="Diplomado de Finanzas para Profesionales de la Salud"
+                >
+                  Diplomado de Finanzas para Profesionales de la Salud
+                </option>
+                <option
+                  value="Diplomado en Atención Primaria en Salud Infantil - Enfoque de Pediatría para Médicos Generales"
+                >
+                  Diplomado en Atención Primaria en Salud Infantil - Enfoque de
+                  Pediatría para Médicos Generales
+                </option>
+                <option value="Diplomado de Economía en la Salud">
+                  Diplomado de Economía en la Salud
+                </option>
+                <option value="Diplomado de Calidad y Auditoría en Salud">
+                  Diplomado de Calidad y Auditoría en Salud
+                </option>
+                <option value="Diplomado de Farmacología">
+                  Diplomado de Farmacología
+                </option>
+                <option
+                  value="Diplomado en Cuidado de Enfermería en la Administración Segura de Quimioterapia Antineoplásica"
+                >
+                  Diplomado en Cuidado de Enfermería en la Administración Segura
+                  de Quimioterapia Antineoplásica
+                </option>
+                <option
+                  value="Diplomado de Introducción a las Intervenciones Asistidas por Perros en Salud - IAPS"
+                >
+                  Diplomado de Introducción a las Intervenciones Asistidas por
+                  Perros en Salud - IAPS
+                </option>
+                <option
+                  value="Diplomado de Urgencias para Médicos no Urgenciólogos"
+                >
+                  Diplomado de Urgencias para Médicos no Urgenciólogos
+                </option>
+                <option value="Diplomado de Simulación Clínica">
+                  Diplomado de Simulación Clínica
+                </option>
+                <option value="Diplomado Seguridad del Paciente">
+                  Diplomado Seguridad del Paciente
+                </option>
+                <option
+                  value="Diplomado en Salud Mental en la Infancia y la Adolescencia: Atención a las Afectaciones por Conflicto Armado"
+                >
+                  Diplomado en Salud Mental en la Infancia y la Adolescencia:
+                  Atención a las Afectaciones por Conflicto Armado
+                </option>
+                <option
+                  value="Diplomado en Cuidado Crítico para Personal de Enfermería"
+                >
+                  Diplomado en Cuidado Crítico para Personal de Enfermería
+                </option>
+                <option
+                  value="Diplomado Gestión de Inventarios en el Sector Salud"
+                >
+                  Diplomado Gestión de Inventarios en el Sector Salud
+                </option>
+                <option value="Diplomado Valor en Salud">
+                  Diplomado Valor en Salud
+                </option>
+                <option value="Diplomado de Ecocardiografía Fetal Avanzada">
+                  Diplomado de Ecocardiografía Fetal Avanzada
+                </option>
+                <option
+                  value="Diplomado de Imágenes por Ultrasonido en Obstetricia"
+                >
+                  Diplomado de Imágenes por Ultrasonido en Obstetricia
+                </option>
+                <option
+                  value="Diplomado Latinoamericano en Prevención Psicosocial al Problema de Uso y Abuso de Sustancias Psicoactivas"
+                >
+                  Diplomado Latinoamericano en Prevención Psicosocial al
+                  Problema de Uso y Abuso de Sustancias Psicoactivas
+                </option>
+              </select>
             </div>
             <!-- Fin Bloque  que contiene un input que indica el programa -->
             <!--  Bloque  que contiene un input para ingresar el nombre y apellido -->
