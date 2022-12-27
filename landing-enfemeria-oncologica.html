@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+  <head>
+    <!--Etiqueta para determinar la codificicación, UFT-8 acepta caracteres especiales -->
+    <meta charset="utf-8" />
+    <!--Etiqueta para hacer la página responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Descripción de la página -->
+    <meta
+      name="description"
+      content="Landing de Unisanitas para el especialización en Enfemería oncológico"
+    />
+    <!--Título de la pestaña -->
+    <title>Bienvenido a Unisanitas</title>
+    <!-- CSS con bootstrap versión 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- css para añadir estilos a la página-->
+    <link href="/assets/css/cover.css" rel="stylesheet" />
+  </head>
+  <!-- Inicio del contenido de la página-->
+
+  <body
+    class="d-flex flex-row-reverse h-100 text-bg-dark "
+    style="background-image: url('/assets/img/Enfermería Oncológica-min.jpg')"
+  >
+    <!--Bloque que contiene todos los elementos de la pagina-->
+    <main class="text-center mt-4 me-5 mb-0">
+      <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
+      <div id="loader" class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- Elemento de bloque que contiene el logo de Unisanitas-->
+      <div class="mt-2">
+        <!--Imagen que contiene el logo de Unisanitas-->
+        <img
+          src="/assets/img/Logo.png"
+          class="rounded"
+          alt="Logo Unisanitas"
+          width="100px"
+        />
+      </div>
+
+      <!--Fin del elemento de carga-->
+      <!--Elemento de bloque que contiene el texto principal de la pagina-->
+      <div class="">
+        <div class="text-black">
+          <h1 class="fs-3">Ingresa tus datos</h1>
+        </div>
+        <!--Fin del Elemento de bloque que contiene el texto principal de la pagina-->
+        <!-- Elemento de bloque que contiene el formulario-->
+        <div class="contact-form form-group">
+          <!-- Inicio del formulario-->
+          <form
+            action="post"
+            class="w-30 px-auto"
+            method="post"
+            role="form"
+            id="form"
+          >
+            <!-- Bloque  que contiene un input que indica el programa -->
+            <div class="form-group mb-2 text-center">
+              <input
+                class="form-control text-center rounded-pill"
+                type="text"
+                placeholder="Especialización en enfemería oncológica"
+                value="Especialización en enfemería oncológica"
+                name="programa_academico"
+                disabled
+              />
+            </div>
+            <!-- Fin Bloque  que contiene un input que indica el programa -->
+            <!--  Bloque  que contiene un input para ingresar el nombre y apellido -->
+            <div class="input-group mb-2">
+              <input
+                class="form-control mx-1 rounded-pill"
+                type="text"
+                name="firstname"
+                id=""
+                placeholder="Nombre*"
+                required
+              />
+              <input
+                class="form-control rounded-pill"
+                type="text"
+                name="lastname"
+                id=""
+                placeholder="Apellido*"
+                required
+              />
+            </div>
+            <!--  FIN Bloque  que contiene un input para ingresar el nombre y apellido -->
+            <!--  Bloque  que contiene un input para ingresar el whatsapp-->
+            <div class="input-group mb-2">
+              <label class="form-control rounded-pill" for="flexCheckChecked">
+                <img
+                  src="/assets/img/colombia.png"
+                  width="20px"
+                  class="text-left"
+                />+57
+              </label>
+
+              <input
+                class="form-control rounded-pill"
+                type="tel"
+                name="whatsapp"
+                id=""
+                placeholder="WhatsApp*"
+                required
+              />
+            </div>
+            <!--  Fin Bloque  que contiene un input para ingresar el whatsapp-->
+            <!--  Bloque  que contiene input para ingresar el correo -->
+            <div class="input-group mb-2">
+              <input
+                class="form-control rounded-pill"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Correo electrónico*"
+                required
+              />
+            </div>
+            <!--Fin  Bloque  que contiene input para ingresar el correo -->
+            <!-- Bloque  que contiene el checkbox para el tratamiento de datos personales-->
+            <div class="row">
+              <div class="col-md-12 well">
+                <div
+                  class="container d-flex form-check align-items-center justify-content-center mt-2"
+                >
+                  <!-- checkbox para el tratamiento de datos personales-->
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="terminos"
+                    name="terminos_condiciones"
+                    required
+                  />
+                  <!-- Documento de tratamiento de datos personales-->
+                  <a
+                    class="form-check-label text-black"
+                    href="/assets/documents/POLÍTICA_DE_GESTIÓN_Y_SEGURIDAD_DE_LA_INFORMACIÓN.pdf"
+                    target="_blank"
+                  >
+                    Acepto tratamiento de datos personales
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--Fin  Bloque  que contiene el checkbox para el tratamiento de datos personales-->
+            <!--  Bloque  que contiene el botón para enviar la información al CRM, este hace una llamada a una función del script-->
+            <div class="col-md-12 well">
+              <button class="btn btn-primary" type="button" onclick="insert()">
+                Enviar
+              </button>
+            </div>
+            <!--  Bloque  que contiene el botón para enviar la información al CRM-->
+          </form>
+          <!--Fin del formulario-->
+        </div>
+        <!--Fin Elemento de bloque que contiene el formulario-->
+        <!-- Bloque que contiene la imagen del programa-->
+        <div class="">
+          <figure>
+            <img
+              class="img-fluid"
+              src="/assets/img/Texto-enfermeria.png"
+              alt="Pregrado en Medicina"
+              width="180px"
+            />
+          </figure>
+          <!-- Fin Bloque que contiene la imagen del programa-->
+          <!-- Bloque que el link para descargar documento para información-->
+          <div class="container mt-2">
+            <a
+              href="/assets/documents/POLÍTICA_DE_GESTIÓN_Y_SEGURIDAD_DE_LA_INFORMACIÓN.pdf"
+              download="Pensum"
+              class="btn btn-primary"
+              >Descargar Pensúm</a
+            >
+          </div>
+          <!-- Bloque que el link para descargar documento para información-->
+        </div>
+        <!-- Fin Bloque que contiene la imagen del programa-->
+        <!--Fin Bloque que contiene todos los elementos de la pagina-->
+      </div>
+    </main>
+
+    <!-- Js para añadir logica, verificación de los campos, del correo y envio de información al crm -->
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
