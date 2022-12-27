@@ -60,6 +60,11 @@ form {
     margin: 0 auto !important;
     text-align: center;
     float: none !important;
+  } 
+}
+@media only screen and (max-width:550px){
+  .me-5{
+    margin:0 auto !important;
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
