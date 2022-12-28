@@ -32,8 +32,6 @@
   >
     <!--Bloque que contiene todos los elementos de la pagina-->
     <main class="text-center mt-4 me-5 mb-0">
-      <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
-
       <!-- Elemento de bloque que contiene el logo de Unisanitas-->
       <div class="mt-2">
         <!--Imagen que contiene el logo de Unisanitas-->
@@ -44,6 +42,8 @@
           width="100px"
         />
       </div>
+      <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
+
       <div id="loader" class="lds-ring">
         <div></div>
         <div></div>
@@ -72,10 +72,11 @@
             id="form"
           >
             <!-- Bloque  que contiene un input que indica el programa -->
-            <div class="">
+            <div class="form-group mb-2 text-center">
               <select
                 name="programa_academico"
-                class=""
+                class="form-select text-left rounded-pill"
+                  style="width:410px"
               >
                 <option selected disabled>
                   Seleccione el curso o diplomado
@@ -327,7 +328,6 @@
                   class="text-left"
                 />+57
               </label>
-
               <input
                 class="form-control rounded-pill"
                 type="tel"
