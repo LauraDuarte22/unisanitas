@@ -80,9 +80,13 @@ form {
   color: #46799f;
 }
 /*Color del texto de confirmación de envio*/
-.fs-1 {
+.fs-1{
   color: #169cbc;
 }
+.fs-2{
+  color:#707070
+}
+
 /*ELEMENTO DE CARGA*/
 
 .lds-ring {
