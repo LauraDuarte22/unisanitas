@@ -62,10 +62,15 @@ form {
     text-align: center;
     float: none !important;
   } 
+ 
 }
 @media only screen and (max-width:550px){
   .me-5{
     margin:0 auto !important;
+  }
+   body{
+    background-color:#FFFFFF;
+     background-image:none;
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
