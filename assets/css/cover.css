@@ -1,14 +1,18 @@
 /*
  *Estilos de las páginas
  */
+:root {
+  --desktop: "placeholder-url";
+  --mobile: "placeholder-url";
+}
 
 /*Background de la landing principal*/
 body {
+  background-image: var(--desktop);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: cover;
-  
 }
 /*Background de gracias*/
 .body-gracias {
@@ -34,7 +38,9 @@ body {
   background-color: #979797 !important;
   border-color: #979797 !important;
 }
-a:hover li{color: #169cbc;}
+a:hover li {
+  color: #169cbc;
+}
 /*Los elementos del formularios se despliegan uno debajo de otro*/
 form {
   display: inline-block;
@@ -62,20 +68,16 @@ form {
     margin: 0 auto !important;
     text-align: center;
     float: none !important;
-  } 
-   body{
-    
-    background-image:none
   }
- 
+  
 }
-@media only screen and (max-width:550px){
-  .me-5{
-    margin:0 auto !important;
+@media only screen and (max-width: 550px) {
+  .me-5 {
+    margin: 0 auto !important;
   }
-   body{
-    
-    background-image:none
+ body {
+   backgroun-url=none
+    background-color: #FFFFFF;
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
@@ -91,11 +93,11 @@ form {
   color: #46799f;
 }
 /*Color del texto de confirmación de envio*/
-.fs-1{
+.fs-1 {
   color: #169cbc;
 }
-.fs-2{
-  color:#707070
+.fs-2 {
+  color: #707070;
 }
 
 /*ELEMENTO DE CARGA*/
@@ -135,4 +137,3 @@ form {
     transform: rotate(360deg);
   }
 }
-
