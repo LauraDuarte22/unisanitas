@@ -36,7 +36,7 @@ function validateEmail() {
   var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
   /*Esta condición valida si el valor ingresado es un correo valido*/
   if (!regex.test(emailValue)) {
-     /*Con la propiedad classList añade o elimina clases de css,
+    /*Con la propiedad classList añade o elimina clases de css,
     para cambiar el estilo del chechbox
     Completed: checkbox esta en gris
     validateCheck:checkbox esta en rojo
@@ -62,15 +62,17 @@ function mandatoryFiles() {
   for (var i = 0; i < form.elements.length - 3; i++) {
     //La siguiente condición verifica cual input esta vació o no
     //if (form.elements[i].value === "") {
-    if(form.elements[i].hasAttribute('required')){
+    if (form.elements[i].hasAttribute("required")) {
+      if ((form.elements[i].value = "")) {
         /*Con la propiedad classList añade o elimina clases de css,
     para cambiar el estilo del chechbox
     Completed: checkbox esta en gris
     validateCheck:checkbox esta en rojo
     */
-      form.elements[i].classList.remove("completed");
-      form.elements[i].classList.add("validateCheck");
-      verificate = true;
+        form.elements[i].classList.remove("completed");
+        form.elements[i].classList.add("validateCheck");
+        verificate = true;
+      }
     } else {
       form.elements[i].classList.add("completed");
       verificate = false;
@@ -82,19 +84,19 @@ function mandatoryFiles() {
 /*Función para ingresar los datos digitados el CRM*/
 async function crm() {
   //Variable para apercer el icono de carga
-  let loader =document.getElementById("loader");
-  loader.style.display="inline-block";
+  let loader = document.getElementById("loader");
+  loader.style.display = "inline-block";
   //canal por el que está entrando el lead
   let channel = window.location.href;
   //valores digitados en el  formularios
   let programa = document.getElementsByName("programa_academico")[0].value;
   let name = document.getElementsByName("firstname")[0].value;
-  let lastName =document.getElementsByName("lastname")[0].value;
-  let fullName =  name + " " + lastName;
+  let lastName = document.getElementsByName("lastname")[0].value;
+  let fullName = name + " " + lastName;
   let whatsapp = document.getElementsByName("whatsapp")[0].value;
-  let email =  document.getElementsByName("email")[0].value;
-  let terminos_condiciones =true;
-//Consumo de la API de wolkvox https://www.crmvox.com/apis-v2/insert/
+  let email = document.getElementsByName("email")[0].value;
+  let terminos_condiciones = true;
+  //Consumo de la API de wolkvox https://www.crmvox.com/apis-v2/insert/
   try {
     const request = await fetch(
       "https://crm.wolkvox.com/server/API/v2/custom/insert.php",
@@ -132,13 +134,11 @@ async function crm() {
         }),
       }
     );
-//Promesa que retorna el valor del consumo de API 
+    //Promesa que retorna el valor del consumo de API
     var promise = Promise.resolve(request);
     promise.then(function (data) {
-    //Redirección a la página de gracias
+      //Redirección a la página de gracias
       window.location.href = "gracias.html";
-       
-
     });
     //Error
   } catch (e) {}

@@ -33,6 +33,7 @@ body {
   background-color: #979797 !important;
   border-color: #979797 !important;
 }
+a:hover li{color: #169cbc;}
 /*Los elementos del formularios se despliegan uno debajo de otro*/
 form {
   display: inline-block;
@@ -124,3 +125,4 @@ form {
     transform: rotate(360deg);
   }
 }
+
