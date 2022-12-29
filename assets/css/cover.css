@@ -11,7 +11,6 @@ body {
   background-image: var(--desktop);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: #ffffff;
   background-size: cover;
 }
 /*Background de gracias*/
@@ -70,15 +69,21 @@ form {
     float: none !important;
   }
   
+  
+}
+@media only screen and (max-width: 1100px) {
+    body {
+    background-color: #169cbc;
+    background-image: none;
+ 
+  }
+
 }
 @media only screen and (max-width: 550px) {
   .me-5 {
     margin: 0 auto !important;
   }
- body {
-   backgroun-url=none
-    background-color: #FFFFFF;
-  }
+
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
 .validateCheck {
