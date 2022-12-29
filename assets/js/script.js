@@ -77,6 +77,7 @@ function mandatoryFiles() {
   }
   return verificate;
 }
+
 /*Función para ingresar los datos digitados el CRM*/
 async function crm() {
   //Variable para apercer el icono de carga
