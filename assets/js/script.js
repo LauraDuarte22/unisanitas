@@ -59,9 +59,10 @@ function mandatoryFiles() {
   //Variable para traer todo el elemento del formulario
   var form = document.getElementById("form");
   //Este for recorre todo el elemento form
-  for (var i = 1; i < form.elements.length - 3; i++) {
+  for (var i = 0; i < form.elements.length - 3; i++) {
     //La siguiente condición verifica cual input esta vació o no
-    if (form.elements[i].value === "") {
+    //if (form.elements[i].value === "") {
+    if(form.elements[i].hasAttribute('required')){
         /*Con la propiedad classList añade o elimina clases de css,
     para cambiar el estilo del chechbox
     Completed: checkbox esta en gris
