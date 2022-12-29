@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: cover;
+  
 }
 /*Background de gracias*/
 .body-gracias {
@@ -62,6 +63,10 @@ form {
     text-align: center;
     float: none !important;
   } 
+   body{
+    
+    background-image:none
+  }
  
 }
 @media only screen and (max-width:550px){
@@ -69,8 +74,8 @@ form {
     margin:0 auto !important;
   }
    body{
-    background-color:#FFFFFF;
-     background-image:none;
+    
+    background-image:none
   }
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
