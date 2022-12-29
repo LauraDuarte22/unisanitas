@@ -68,22 +68,22 @@ form {
     text-align: center;
     float: none !important;
   }
-  
-  
 }
-@media only screen and (max-width: 1100px) {
-    body {
+@media only screen and (max-width: 800px) {
+  body {
     background-color: #169cbc;
     background-image: none;
- 
   }
-
 }
 @media only screen and (max-width: 550px) {
-  .me-5 {
-    margin: 0 auto !important;
+  .principal {
+    position: absolute;
+    /*  top: 0;
+  bottom: 0; */
+    left: 0;
+    right: 0;
+    margin: auto !important;
   }
-
 }
 /*VALIDACIÓN DEL FORMULARIOS*/
 .validateCheck {
