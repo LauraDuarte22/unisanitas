@@ -59,11 +59,10 @@ function mandatoryFiles() {
   //Variable para traer todo el elemento del formulario
   var form = document.getElementById("form");
   //Este for recorre todo el elemento form
-  for (var i = 1; i < form.elements.length - 3; i++) {
+  for (var i = 0; i < form.elements.length - 3; i++) {
     //La siguiente condición verifica cual input esta vació o no
-    //if (form.elements[i].value === "") {
-    alert(form.elements[i])
     if (form.elements[i].value === "") {
+   
       /*Con la propiedad classList añade o elimina clases de css,
     para cambiar el estilo del chechbox
     Completed: checkbox esta en gris
@@ -72,8 +71,13 @@ function mandatoryFiles() {
       form.elements[i].classList.remove("completed");
       form.elements[i].classList.add("validateCheck");
       verificate = true;
-    } else {
-      form.elements[i].classList.add("completed");
+    }
+    if(form.elements[i].type==="select-one" && form.elements[i].options[form.elements[i].selectedIndex]!=="Seleccione el programa que desea"){
+      form.elements[i].classList.remove("completed");
+      form.elements[i].classList.add("validateCheck");
+      verificate = true;
+    }else{
+       form.elements[i].classList.add("completed");
       verificate = false;
     }
   }
