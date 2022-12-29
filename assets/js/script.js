@@ -62,7 +62,6 @@ function mandatoryFiles() {
   for (var i = 0; i < form.elements.length - 3; i++) {
     //La siguiente condición verifica cual input esta vació o no
     if (form.elements[i].value === "") {
-   
       /*Con la propiedad classList añade o elimina clases de css,
     para cambiar el estilo del chechbox
     Completed: checkbox esta en gris
@@ -72,12 +71,16 @@ function mandatoryFiles() {
       form.elements[i].classList.add("validateCheck");
       verificate = true;
     }
-    if(form.elements[i].type==="select-one" && form.elements[i].options[form.elements[i].selectedIndex]!=="Seleccione el programa que desea"){
+    else if (
+      form.elements[i].type === "select-one" &&
+      form.elements[i].options[form.elements[i].selectedIndex].text ===
+        "Seleccione el programa que desea"
+    ) {
       form.elements[i].classList.remove("completed");
       form.elements[i].classList.add("validateCheck");
       verificate = true;
-    }else{
-       form.elements[i].classList.add("completed");
+    } else {
+      form.elements[i].classList.add("completed");
       verificate = false;
     }
   }
