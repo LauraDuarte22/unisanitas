@@ -55,28 +55,20 @@ form {
   .centered i {
     width: 75px;
   }
-  .principal {
-    margin: 0 auto !important;
-    text-align: center;
-    float: none !important;
-  }
+
 }
 @media only screen and (max-width: 800px) {
   body {
-    background-color: #FFFFFF;
+   
     
    opacity: 0.6
   }
-  main{
-     opacity: 1 ;
-  }
+ body::before{
+  opacity:1;
+}
 }
 @media only screen and (max-width: 550px) {
-  .principal {
-    left: 0 !important;
-    right: 0 !important;
-    margin: auto !important;
-  }
+ 
   .me-5{
      margin: 0.5rem !important;
   }
@@ -140,4 +132,24 @@ form {
   100% {
     transform: rotate(360deg);
   }
+}
+.principal { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://placekitten.com/1200/800');
+    background-size: cover;
+}
+
+.principal::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
 }
