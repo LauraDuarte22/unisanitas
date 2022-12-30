@@ -1,6 +1,3 @@
-  if (window.innerWidth < 768) {
-    document.body.style.backgroundcolor = "white";
-  }
 
 /*Función para validar si checkbox esta diligenciado
 Retorna false, cuando el checbox esta completados
@@ -172,6 +169,13 @@ function insert() {
   }
 }
 
+if(window.addEventListener) {
+addEventListener("resize", (event) => {
+   const image = document.createElement('img')
+  image.src  = '/assets/img/Auditoría y Calidad-min.jpg'
+  document.querySelector('.footer').appendChild(image)
+});
 
+}
 
 
