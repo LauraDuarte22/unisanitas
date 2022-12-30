@@ -64,8 +64,11 @@ form {
 @media only screen and (max-width: 800px) {
   body {
     background-color: #FFFFFF;
-    background-image: none;
-    background-color:rgba(255, 255, 255, 0.5);
+    
+   opacity: 0.6
+  }
+  main{
+     opacity: 1 ;
   }
 }
 @media only screen and (max-width: 550px) {
