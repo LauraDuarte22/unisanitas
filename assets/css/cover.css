@@ -13,15 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*Background de gracias*/
-.body-gracias {
-  background-image: url("/assets/img/Background-min.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-size: cover;
-}
+
 /*El background ocupa toda la página*/
 .cover-container {
   height: 100vh;
