@@ -166,12 +166,15 @@ function insert() {
   */
   if (checkBox === true && email === true && mandatory == false) {
     crm();
+
   }
 }
-function addImage(){
+funcaddImageImag
+   if (document.window.width<=800){e(){
 
    var terminos = document.getElementById("image-resize");
-   terminos.classList.remove("d-none");
+   terminos.classList.remove("d-no
+}ne");
 
 
 }
