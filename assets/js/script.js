@@ -168,12 +168,11 @@ function insert() {
     crm();
   }
 }
+function addImage(){
 
-if(window.addEventListener) {
-addEventListener("resize", (event) => {
    var terminos = document.getElementById("image-resize");
    terminos.classList.remove("d-none");
-});
+
 
 }
 
