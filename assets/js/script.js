@@ -1,4 +1,3 @@
-
 /*Función para validar si checkbox esta diligenciado
 Retorna false, cuando el checbox esta completados
 Retorna true, cuando el checbox esta sin llenar
@@ -71,8 +70,7 @@ function mandatoryFiles() {
       form.elements[i].classList.remove("completed");
       form.elements[i].classList.add("validateCheck");
       verificate = true;
-    }
-    else if (
+    } else if (
       form.elements[i].type === "select-one" &&
       form.elements[i].options[form.elements[i].selectedIndex].text ===
         "Seleccione el programa que desea"
@@ -166,17 +164,13 @@ function insert() {
   */
   if (checkBox === true && email === true && mandatory == false) {
     crm();
-
   }
 }
-funcaddImageImag
-   if (document.window.width<=800){e(){
-
-   var terminos = document.getElementById("image-resize");
-   terminos.classList.remove("d-no
-}ne");
-
-
+function addImage() {
+   if (window.matchMedia('(max-width: 800px)').matches) {
+    var image = document.getElementById("image-resize");
+    image.classList.remove("d-none");
+    image.classList.add("d-block");
 }
-
-
+}
+addImage() ;
