@@ -171,9 +171,8 @@ function insert() {
 
 if(window.addEventListener) {
 addEventListener("resize", (event) => {
-   const image = document.createElement('img')
-  image.src  = '/assets/img/Auditoría y Calidad-min.jpg'
-  document.querySelector('.footer').appendChild(image)
+   var terminos = document.getElementById("image-resize");
+   terminos.classList.remove("d-none");
 });
 
 }
