@@ -166,11 +166,3 @@ function insert() {
     crm();
   }
 }
-function addImage() {
-   if (window.matchMedia('(max-width: 800px)').matches) {
-    var image = document.getElementById("image-resize");
-     image.classList.remove("d-none");
-    image.classList.add("d-block");
-}
-}
-addImage();
