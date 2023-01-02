@@ -51,7 +51,8 @@ form {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(171, 171, 171, 0.1);
+    /*background-color: rgba(253, 254, 254, 0.1);*/
+    opacity:0.4
   }
   .text-black{
     color:#FFFFFF !important;
