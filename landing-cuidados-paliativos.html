@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="es" class="h-100">
   <head>
+        <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "5396291967155442");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=5396291967155442&ev=PageView
+&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
     <!--Etiqueta para determinar la codificicación, UFT-8 acepta caracteres especiales -->
     <meta charset="utf-8" />
     <!--Etiqueta para hacer la página responsive -->
@@ -11,7 +48,10 @@
       content="Landing de Unisanitas para el especialización en Cuidados Paliativos"
     />
     <!-- Plabaras clave para los buscadores -->
-    <meta name="keywords" content="Posgrados,Unisanitas,especialización, cuidados paliativos"/>
+    <meta
+      name="keywords"
+      content="Posgrados,Unisanitas,especialización, cuidados paliativos"
+    />
 
     <!-- Logo de Unisaitas en la pestaña-->
     <link rel="shortcut icon" href="/assets/img/Logo.png" />
@@ -29,13 +69,13 @@
   </head>
   <!-- Inicio del contenido de la página-->
 
-  <body
-    class="h-100" 
-  >
+  <body class="h-100">
     <!--Bloque que contiene todos los elementos de la pagina-->
-    <main class="d-flex flex-row-reverse"
-           style="--desktop: url('/assets/img/Cuidados Paliativos-min.jpg')">
-      <div class=" principal text-center mt-4 me-5 mb-0">
+    <main
+      class="d-flex flex-row-reverse"
+      style="--desktop: url('/assets/img/Cuidados Paliativos-min.jpg')"
+    >
+      <div class="principal text-center mt-4 me-5 mb-0">
         <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
 
         <!-- Elemento de bloque que contiene el logo de Unisanitas-->
