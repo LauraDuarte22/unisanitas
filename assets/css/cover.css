@@ -51,7 +51,10 @@ form {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(171, 171, 171, 0.1);
+  }
+  .text-black{
+    color:#FFFFFF !important;
   }
 }
 @media only screen and (max-width: 550px) {
