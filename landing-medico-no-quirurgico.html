@@ -1,43 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="h-100">
   <head>
-        <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "5396291967155442");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=5396291967155442&ev=PageView
-&noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
     <!--Etiqueta para determinar la codificicación, UFT-8 acepta caracteres especiales -->
     <meta charset="utf-8" />
     <!--Etiqueta para hacer la página responsive -->
@@ -45,14 +8,10 @@
     <!--Descripción de la página -->
     <meta
       name="description"
-      content="Profundiza tus conocimientos y habilidades con Unisanitas. Regístrate ahora y especialízate con nosotros. "
+      content="Landing de Unisanitas para el Posgrados Médico  Quirurgicos"
     />
-     <!-- Plabaras clave para los buscadores -->
-    <meta
-      name="keywords"
-      content="Unisanitas,Universidad,Especializaciones,Especializaciones Universitarias,Unisanitas posgrados,Especializaciones en el área de la salud,Especializaciones médicas,,"/>
-    <!-- Logo de Unisaitas en la pestaña-->
-    <link rel="shortcut icon" href="/assets/img/Logo.png" />
+     <!-- Logo de Unisaitas en la pestaña-->
+     <link rel="shortcut icon" href="/assets/img/Logo.png" />
     <!--Título de la pestaña -->
     <title>Bienvenido a Unisanitas</title>
     <!-- CSS con bootstrap versión 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
@@ -67,15 +26,14 @@
   </head>
   <!-- Inicio del contenido de la página-->
 
- 
- <body class="h-100 bg-white">
+  <body
+    class="d-flex flex-row-reverse h-100 text-bg-dark "
+    style="background-image: url('/assets/img/Posgrado Medico Quirúrgico-min.jpg')"
+  >
     <!--Bloque que contiene todos los elementos de la pagina-->
-    <main
-      class="d-flex flex-row-reverse"
-       style="--desktop: url('/assets/img/Background Especializaciones-min.jpg');
-    "
-    >
-      <div class="principal text-center mt-4 me-5 mb-0">
+    <main class="text-center mt-4 me-5 mb-0">
+      <!--Elemento de carga, solo se visualiza cuando le dan click en el botón de enviar-->
+   
       <!-- Elemento de bloque que contiene el logo de Unisanitas-->
       <div class="mt-2">
         <!--Imagen que contiene el logo de Unisanitas-->
@@ -86,7 +44,7 @@
           width="100px"
         />
       </div>
-      <div id="loader" class="lds-ring">
+   <div id="loader" class="lds-ring">
         <div></div>
         <div></div>
         <div></div>
@@ -107,95 +65,22 @@
           <!-- Inicio del formulario-->
           <form
             action="post"
-            class="w-30"
+            class="w-30 px-auto"
             method="post"
             role="form"
             id="form"
           >
             <!-- Bloque  que contiene un input que indica el programa -->
             <div class="form-group mb-2 text-center">
-              <select
+              <input
+                class="form-control text-center rounded-pill"
+                type="text"
+                placeholder="Lista médico no quirurgico"
+                value="Lista médico no quirurgico"
                 name="programa_academico"
-                class="form-select text-left rounded-pill"
-                style="width: 420px"
-                required
-              >
-                <option selected disabled>
-                  Seleccione el programa que desea
-                </option>
-                <option value="Especializacion En Oftalmología">
-                  Especializacion En Oftalmología
-                </option>
-                <option value="Especialización En Medicina Nuclear">
-                  Especialización En Medicina Nuclear
-                </option>
-                <option value="Especialización En Psiquiatría Y Salud Mental">
-                  Especialización En Psiquiatría Y Salud Mental
-                </option>
-                <option
-                  value="Especialización En Medicina Del Dolor Y Cuidados Paliativos"
-                >
-                  Especialización En Medicina Del Dolor Y Cuidados Paliativos
-                </option>
-                <option value="Especialización En Dermatología">
-                  Especialización En Dermatología
-                </option>
-                <option
-                  value="Especialización En Medicina Critica Y Cuidado Intensivo"
-                >
-                  Especialización En Medicina Critica Y Cuidado Intensivo
-                </option>
-                <option value="Especialización En Medicina Materno Fetal">
-                  Especialización En Medicina Materno Fetal
-                </option>
-                <option value="Especialización En Otorrinolaringologia">
-                  Especialización En Otorrinolaringologia
-                </option>
-                <option value="Especialización En Urología">
-                  Especialización En Urología
-                </option>
-                <option
-                  value="Especialización En Gastroenterologia Y Endoscopia Digestiva"
-                >
-                  Especialización En Gastroenterologia Y Endoscopia Digestiva
-                </option>
-                <option value="Especialización En Salud Reproductiva Humana">
-                  Especialización En Salud Reproductiva Humana
-                </option>
-                <option
-                  value="Especialización En Radiologia E Imagenes Diagnosticas"
-                >
-                  Especialización En Radiologia E Imagenes Diagnosticas
-                </option>
-                <option value="Especialización En Ortopedia Y Traumatologia">
-                  Especialización En Ortopedia Y Traumatologia
-                </option>
-                <option value="Especialización En Ginecologia Y Obstetricia">
-                  Especialización En Ginecologia Y Obstetricia
-                </option>
-                <option value="Especialización En Medicina Familiar">
-                  Especialización En Medicina Familiar
-                </option>
-                <option value="Especialización En Pediatria">
-                  Especialización En Pediatria
-                </option>
-                <option value="Especialización En Medicina Interna">
-                  Especialización En Medicina Interna
-                </option>
-                <option
-                  value="Especialización En Anestesia Y Medicina Perioperatoria"
-                >
-                  Especialización En Anestesia Y Medicina Perioperatoria
-                </option>
-                <option value="Especialización En Cirugia General">
-                  Especialización En Cirugia General
-                </option>
-                <option value="Especialización En Radiología Intervencionista">
-                  Especialización En Radiología Intervencionista
-                </option>
-              </select>
+                disabled
+              />
             </div>
-
             <!-- Fin Bloque  que contiene un input que indica el programa -->
             <!--  Bloque  que contiene un input para ingresar el nombre y apellido -->
             <div class="input-group mb-2">
@@ -291,10 +176,10 @@
         <div class="">
           <figure>
             <img
-              class="img-fluid mt-2"
-              src="/assets/img/textos/Posgrado Medico Quirúrgico.png"
+              class="img-fluid"
+              src="/assets/img/Texto/Posgrado Medico Quirùrgico.png"
               alt="Posgrados Medico Quirúrgico"
-              width="300px"
+              width="180px"
             />
           </figure>
           <!-- Fin Bloque que contiene la imagen del programa-->
@@ -311,7 +196,6 @@
         </div>
         <!-- Fin Bloque que contiene la imagen del programa-->
         <!--Fin Bloque que contiene todos los elementos de la pagina-->
-      </div>
       </div>
     </main>
 
