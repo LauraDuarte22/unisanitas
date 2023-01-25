@@ -44,7 +44,6 @@ form {
   }
 }
 
-
 @media only screen and (max-width: 550px) {
   .me-5 {
     margin: 0.5rem !important;
@@ -111,7 +110,7 @@ form {
   }
 }
 .background {
-  background-image: var(--mobile);
+  background-image: var(--desktop);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -119,8 +118,9 @@ form {
 @media only screen and (max-width: 750px) {
   .background {
     background-image: var(--mobile);
-      background-size: cover;
-  height: 100vh;
+     background-size: cover;
+     height: 100vh;
   width: 100%;
   }
 }
+
