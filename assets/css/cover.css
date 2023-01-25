@@ -43,11 +43,6 @@ form {
     width: 75px;
   }
 }
-@media only screen and (max-width: 800px) {
-  main {
-    background-image: var(--mobile);
-  }
-}
 
 @media only screen and (max-width: 550px) {
   .me-5 {
@@ -114,9 +109,18 @@ form {
     transform: rotate(360deg);
   }
 }
-main {
-  background-image: var(--mobile);
+.background {
+  background-image: var(--desktop);
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
+@media only screen and (max-width: 750px) {
+  .background {
+    background-image: var(--mobile);
+     background-size: cover;
+     height: 100vh;
+  width: 100%;
+  }
+}
+
