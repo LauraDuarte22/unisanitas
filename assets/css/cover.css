@@ -44,21 +44,11 @@ form {
   }
 }
 @media only screen and (max-width: 800px) {
-  main::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(100, 100, 100, 0.4);
-   
+  main {
+    background-image: var(--mobile);
   }
-/*  .text-black{
-    color:#FFFFFF !important;
-  }*/
-
 }
+
 @media only screen and (max-width: 550px) {
   .me-5 {
     margin: 0.5rem !important;
@@ -125,7 +115,7 @@ form {
   }
 }
 main {
-  background-image: var(--desktop);
+  background-image: var(--mobile);
   background-size: cover;
   height: 100vh;
   width: 100%;
