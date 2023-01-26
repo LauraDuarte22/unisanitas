@@ -119,9 +119,11 @@ form {
 @media only screen and (max-width: 750px) {
   .background {
     background-image: var(--mobile);
-      background-size: cover;
-  height: 100vh;
-  width: 100%;
+    background-size: cover;
+      background-position: 35% 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
   }
   .text-end{
     text-align:center!important
