@@ -72,6 +72,10 @@ form {
 .fs-2 {
   color: #707070;
 }
+img.right{
+display:block;
+float:right;
+}
 
 /*ELEMENTO DE CARGA*/
 
@@ -124,5 +128,7 @@ form {
   height: 100vh;
   width: 100%;
   }
-
+.text-end {
+    text-align: center!important;
+}
 }
